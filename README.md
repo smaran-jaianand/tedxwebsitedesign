@@ -1,3 +1,2 @@
 # tedxwebsitedesign
 
-### initial commit
