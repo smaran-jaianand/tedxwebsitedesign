@@ -1,6 +1,6 @@
 # tedxwebsitedesign
 
-#### authon : smaran-jaianand
+#### author :
 
 #### date : 2022-02-15
 
