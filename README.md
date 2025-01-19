@@ -1,6 +1,6 @@
 # tedxwebsitedesign
 
-#### author :
+#### author : parth
 
 #### date : 2022-02-15
 
