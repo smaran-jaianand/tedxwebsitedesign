@@ -458,8 +458,8 @@
 		<div class="container">
 			<div class="section-header">
 				<h2 style="color: #e62b1e">PARTNERS</h2>
-				<p style="color:white;"><b>Bold ideas need bold backers. With your support, this celebration of
-						imagination takes flight. Come build what’s next with us.</b></p>
+				<h4 style="color:white;"><b>Bold ideas need bold backers. With your support, this celebration of
+						imagination takes flight. Come build what's next with us.</b></h4>
 			</div>
 
 			<!--<div class="owl-carousel clients-carousel">
@@ -487,36 +487,57 @@
 			</div>
 			<div>
 				<a href="team.html">
-					<img src="img/2.gif" alt="Team Icon" style="width: 100px; height: 100px;">
-					<p style="color:white;"><b>
+					<h4 style="color:white;"><b>
 							We are a fusion of talent, vision, and purpose—each member uniquely skilled, yet driven by a
 							shared mission. Together, we create, innovate, and ignite the spirit of Technology,
-							Entertainment, and Design.</b>
-					</p>
+							Entertainment, and Design.
+						</b>
+					</h4>
+					<br>
 				</a>
-				<a href="team.html">
-					<button>
-						THE POWERHOUSE
-					</button>
-					<style>
-						button {
-							background-color: #E62B1E;
-							color: white;
-							border-color: #E62B1E;
-							font-weight: bold;
-							height: 46px;
-							padding-top: 3px;
-							border-radius: 4px;
-							cursor: pointer;
-						}
+				<a href="team.html" class="neon-button">MEET THE POWERHOUSE</a>
+				<style>
+					@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
 
-						button:hover {
-							background-color: rgb(255, 255, 255);
-							color: #E62B1E;
-							border-color: #E62B1E;
-							transition: background-color 0.3s ease, color 0.3s ease;
-						}
-					</style>
+					.neon-button {
+						font-family: "Orbitron", sans-serif;
+						position: relative;
+						display: inline-block;
+						padding: 14px 39px;
+						/* Reduced by 1px */
+						color: #ff1a1a;
+						font-size: 18px;
+						text-transform: uppercase;
+						text-decoration: none;
+						overflow: hidden;
+						border: 2px solid #ff1a1a;
+						border-radius: 10px;
+						transition: 0.3s ease-in-out;
+						box-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff1a1a, 0 0 40px #ff1a1a;
+						background-color: transparent;
+					}
+
+					.neon-button::before {
+						content: "";
+						position: absolute;
+						top: 0;
+						left: -100%;
+						width: 100%;
+						height: 100%;
+						background: linear-gradient(120deg, transparent, #ff1a1a, transparent);
+						transition: left 0.5s ease;
+					}
+
+					.neon-button:hover::before {
+						left: 100%;
+					}
+
+					.neon-button:hover {
+						color: #ffffff;
+						background-color: rgba(255, 26, 26, 0.1);
+						box-shadow: 0 0 15px #ff1a1a, 0 0 30px #ff1a1a, 0 0 60px #ff1a1a;
+					}
+				</style>
 				</a>
 			</div>
 		</div>
@@ -531,33 +552,15 @@
 				<h2 style="color: #e62b1e">SPEAKERS</h2>
 			</div>
 			<a href="speakers.html">
-				<img src="img/2.gif" alt="Speaker Icon" style="width: 100px; height: 100px;">
-				<p style="color:white;"><b>Trailblazers of thought and action—these are the speakers leading the way in
-						the FIRST season of TEDxSIUH.</b></p>
+				<h4 style="color:white;"><b>Trailblazers of thought and action—these are the speakers leading the way in
+						the FIRST season of TEDxSIUH.</b></h4>
+				<br>
 			</a>
 			<a href="speakers.html">
-				<button id="spkbtn">
+				<button class="neon-button" style="cursor:pointer;">
 					MEET THE VOICE BEHIND THE MAGIC
 				</button>
-				<style>
-					#spkbtn {
-						background-color: #E62B1E;
-						color: white;
-						border-color: #E62B1E;
-						font-weight: bold;
-						height: 46px;
-						padding-top: 3px;
-						border-radius: 4px;
-						cursor: pointer;
-					}
 
-					#spkbtn:hover {
-						background-color: rgb(255, 255, 255);
-						color: #E62B1E;
-						border-color: #E62B1E;
-						transition: background-color 0.3s ease, color 0.3s ease;
-					}
-				</style>
 			</a>
 		</div>
 	</section>
