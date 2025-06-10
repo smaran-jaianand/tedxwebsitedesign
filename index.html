@@ -21,6 +21,15 @@
 	<style>
 		#header {
 			background-color: black;
+			padding: 0;
+			/* Remove extra padding */
+			margin: 0;
+			/* Remove extra margin */
+			height: 100px;
+			/* Set a smaller height */
+			display: flex;
+			align-items: center;
+			/* Vertically center content */
 		}
 
 		th,
@@ -29,6 +38,15 @@
 			padding: 8px;
 			color: white;
 		}
+
+		#logo img {
+			height: 70px;
+			/* Reduce logo height */
+			width: 200px;
+			/* Keep aspect ratio */
+			margin: 0;
+			padding: 0;
+		}
 	</style>
 </head>
 
@@ -36,7 +54,7 @@
 	<header id="header">
 		<div class="container">
 			<div id="logo" class="pull-left">
-				<h1 style="float: left"><a href="#body"><img src="img/tedxsiuhyd.jpg" height="90px" width="200px"></a>
+				<h1><a href="#body"><img src="img/tedxsiuhyd.jpg" height="90px" width="200px"></a>
 				</h1>
 			</div>
 			<nav style="float: right;" id="nav-menu-container">
@@ -60,12 +78,12 @@
 					</li>
 					<li style="color:grey; padding-top:10px">|</li>
 					<li class="social-links">
-						<a href="https://www.facebook.com/Tedxvce-359483908032356/" class="facebook"><i
-								class="fa fa-facebook"></i></a>
-						<a href="https://instagram.com/tedxvce?igshid=1ijrwvm3uo0ip" class="instagram"><i
-								class="fa fa-instagram"></i></a>
-						<a href="https://www.linkedin.com/company/tedxvce/" class="linkedln"><i
-								class="fa fa-linkedin"></i></a>
+					<li>
+						<a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href="" class="linkedln"><i class="fa fa-linkedin"></i></a>
+					</li>
 					</li>
 				</ul>
 			</nav>

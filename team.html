@@ -34,6 +34,35 @@
 			color: #fff;
 		}
 
+		#header {
+			background-color: black;
+			padding: 0;
+			/* Remove extra padding */
+			margin: 0;
+			/* Remove extra margin */
+			height: 100px;
+			/* Set a smaller height */
+			display: flex;
+			align-items: center;
+			/* Vertically center content */
+		}
+
+		th,
+		td {
+			text-align: left;
+			padding: 8px;
+			color: white;
+		}
+
+		#logo img {
+			height: 70px;
+			/* Reduce logo height */
+			width: 200px;
+			/* Keep aspect ratio */
+			margin: 0;
+			padding: 0;
+		}
+
 		.headerteam {
 			background-color: #000000;
 			font-family: 'Montserrat', Arial, sans-serif;
@@ -269,9 +298,46 @@
 </head>
 
 <body style="background-color: black;">
-
-
 	<header id="header">
+		<div class="container">
+			<div id="logo" class="pull-left">
+				<h1><a href="#body"><img src="img/tedxsiuhyd.jpg" height="90px" width="200px"></a>
+				</h1>
+			</div>
+			<nav style="float: right;" id="nav-menu-container">
+				<ul class="nav-menu">
+					<li class="menu-active"><a href="index.html#body">HOME</a></li>
+					<li><a href="index.html">ABOUT</a></li>
+					<li><a href="index.html#portfolio">MEDIA</a></li>
+					<li><a href="index.html#clients">PARTNERS</a></li>
+					<li><a href="index.html#contact">VENUE</a></li>
+					<li>
+					<li><a href="#">TEAM</a></li>
+
+					</li>
+					<li>
+					<li><a href="speakers.html">SPEAKERS</a></li>
+
+					</li>
+					<li>
+					<li><a href="#">TICKETS</a></li>
+
+					</li>
+					<li style="color:grey; padding-top:10px">|</li>
+					<li class="social-links">
+					<li>
+						<a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href="" class="linkedln"><i class="fa fa-linkedin"></i></a>
+					</li>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- <header id="header">
 		<div class="container">
 
 			<div id="logo" class="pull-left">
@@ -289,52 +355,44 @@
 					<li><a href="index.html#contact">VENUE</a></li>
 
 					<li>
-						<!-- <form action=team.html>
+						<form action=team.html>
 							<input type="submit" value="TEAM"
 								style="background-color:#000000;color:white;font-weight:bold;width:100px;height:36px;padding-top:3px;border-radius: 6px;">
-						</form> -->
+						</form> 
 						<a href="team.html"> TEAM </a>
 					</li>
 					<li>
-						<!-- <form action=speakers.html>
+						 <form action=speakers.html>
 							<input type="submit" value="SPEAKERS"
 								style="background-color:#000000;color:white;font-weight:bold;height:36px;padding-top:3px;border-radius: 6px;padding-right:12px;padding-left:12px">
-						</form> -->
+						</form> 
 						<a href="speakers.html"> SPEAKERS </a>
 					</li>
 					<li>
-						<!-- <form action="#">
+						 <form action="#">
 							<input type="submit" value="TICKETS"
 								style="background-color:#000000;color:white;font-weight:bold;width:100px;height:36px;padding-top:3px;padding-left:3px;padding-right:3px;border-radius: 6px;">
-						</form> -->
+						</form> 
 						<a href="#"> TICKETS </a>
 					</li>
-					<!--<li>
+					<li>
                         <form action="#">
                             <input type="submit" value="TICKETS" style="background-color:#E62B1E;color:white;border-color:#E62B1E;font-weight:bold;height:36px;padding-top:3px;border-radius: 6px;"></form>
-                    </li>-->
+                    </li>
 					<li style="color:grey; padding-top:10px">|</li>
 					<li class="social-links">
-
+					<li>
+						<a href="" class="instagram"><i class="fa fa-instagram"></i></a>
 					</li>
 					<li>
-						<a href="https://www.facebook.com/Tedxvce-359483908032356/" class="facebook"><i
-								class="fa fa-facebook"></i></a>
-					</li>
-					<li>
-						<a href="https://instagram.com/tedxvce?igshid=1ijrwvm3uo0ip" class="instagram"><i
-								class="fa fa-instagram"></i></a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/company/tedxvce/" class="linkedln"><i
-								class="fa fa-linkedin"></i></a>
+						<a href="" class="linkedln"><i class="fa fa-linkedin"></i></a>
 					</li>
 					</li>
 				</ul>
 			</nav>
-			<!-- #nav-menu-container -->
+			 #nav-menu-container 
 		</div>
-	</header>
+	</header> -->
 	<div class="main">
 		<div class="containerteam">
 			<header class="headerteam">TEDxSIUH TEAM</header>
