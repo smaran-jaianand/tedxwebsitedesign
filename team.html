@@ -303,6 +303,166 @@
 			display: none;
 			visibility: hidden;
 		}
+
+		@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:100,400');
+
+		/* Hover Effect Animations */
+		@keyframes StarBackground {
+			10% {
+				background-color: rgba(255, 255, 255, 0.1);
+				filter: blur(1px);
+			}
+
+			20% {
+				background-color: rgba(255, 255, 255, 0);
+			}
+
+			40% {
+				background-color: rgba(255, 255, 255, 0.05);
+			}
+
+			50% {
+				background-color: rgba(255, 255, 255, 0);
+			}
+
+			60% {
+				background-color: rgba(255, 255, 255, 0.3);
+			}
+
+			70% {
+				background-color: rgba(255, 255, 255, 0);
+				filter: blur(2px);
+			}
+
+			80% {
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+
+			90% {
+				background-color: rgba(255, 255, 255, 0.1);
+			}
+
+			100% {
+				background-color: rgba(255, 255, 255, 0.09);
+			}
+		}
+
+		@keyframes StarBorderColor {
+			10% {
+				border-color: rgba(255, 255, 255, 0.1);
+			}
+
+			20% {
+				border-color: rgba(255, 255, 255, 0.05);
+			}
+
+			40% {
+				border-color: rgba(255, 255, 255, 0);
+			}
+
+			50% {
+				border-color: rgba(255, 255, 255, 0.3);
+			}
+
+			60% {
+				border-color: rgba(255, 255, 255, 0);
+			}
+
+			70% {
+				border-color: rgba(255, 255, 255, 0.2);
+			}
+
+			80% {
+				border-color: rgba(255, 255, 255, 0.7);
+			}
+
+			90% {
+				border-color: rgba(255, 255, 255, 0);
+			}
+
+			100% {
+				border-color: rgba(255, 255, 255, 0.4);
+			}
+		}
+
+		/* Button Styling */
+		.btn-star {
+			position: relative;
+			background-color: rgba(255, 255, 255, 0.03);
+			padding: 10px 30px;
+			display: block;
+			max-width: 140px;
+			margin: 0 auto;
+			color: rgba(255, 255, 255, 0.6);
+			font-weight: 100;
+			transition: color 0.5s ease, background-color 0.1s ease;
+		}
+
+		.btn-star .top_left,
+		.btn-star .top_right,
+		.btn-star .bottom_left,
+		.btn-star .bottom_right {
+			width: 10px;
+			height: 10px;
+			position: absolute;
+		}
+
+		.btn-star .bottom_right,
+		.btn-star .bottom_left {
+			bottom: 0;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		.btn-star .top_left,
+		.btn-star .top_right {
+			top: 0;
+			border-top: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		.btn-star .top_left,
+		.btn-star .bottom_left {
+			left: 0;
+			border-left: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		.btn-star .top_right,
+		.btn-star .bottom_right {
+			right: 0;
+			border-right: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		.btn-star::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			border: 1px solid transparent;
+			top: 0;
+			left: 0;
+			transition: border-color 0.2s ease;
+		}
+
+		.btn-star:hover {
+			animation: StarBackground 0.5s;
+			background-color: rgba(255, 255, 255, 0.09);
+			color: rgba(255, 255, 255, 1);
+		}
+
+		.btn-star:hover .top_left,
+		.btn-star:hover .top_right,
+		.btn-star:hover .bottom_left,
+		.btn-star:hover .bottom_right {
+			border: none;
+		}
+
+		.btn-star:hover::before {
+			border-color: rgba(255, 255, 255, 0.4);
+			animation: StarBorderColor 1s;
+		}
+
+		.title {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+		}
 	</style>
 </head>
 
@@ -411,150 +571,402 @@
 			<br>
 			<h3 id="teamheading">CORE TEAM</h3>
 			<div class="album-item">
-				<img src="Name" alt="Participant 1 Photo Placeholder">
-				<h3>Name</h3>
+				<img src="" alt="Participant 1 Photo Placeholder">
+				<h3>SAANVI</h3>
 				<!--<a href="#" class="linkedin-button"><img src="img/lkdbtn.png" alt="LinkedIn"></a>-->
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
-				<img src="Name" alt="Participant 2 Photo Placeholder">
-				<h3>Name</h3>
-				<p class="album-item-placeholder">Details coming soon...</p>
+				<img src="" alt="Participant 2 Photo Placeholder">
+				<h3>AKASH RAO SIR</h3>
+				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 3 Photo Placeholder">
-				<h3>Name</h3>
+				<h3>ANANYA</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 4 Photo Placeholder">
-				<h3>Name</h3>
+				<h3>MEENAKSHI</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<h3 id="teamheading">PRODUCTION AND COMMUNICATION TEAM</h3>
 			<div class="album-item">
 				<img src="" alt="Participant 8 Photo Placeholder">
 				<h3>DHARSHVARADH</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 6 Photo Placeholder">
 				<h3>KVS VAINAVI</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 7 Photo Placeholder">
 				<h3>ADITI BHALSING</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 8 Photo Placeholder">
 				<h3>PVL SRUJANA</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 8 Photo Placeholder">
 				<h3>VAISHNAVI VIDYALAYA</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<h3 id="teamheading">DESIGN TEAM</h3>
 			<div class="album-item">
 				<img src="" alt="Participant 9 Photo Placeholder">
 				<h3>ZAKUIR</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 10 Photo Placeholder">
 				<h3>RIYA SHASTRI</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 11 Photo Placeholder">
 				<h3>GUNISHA AGARWAL</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 12 Photo Placeholder">
 				<h3>KU PARTHIV</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 12 Photo Placeholder">
 				<h3>PRAMIT PANIGRAHI</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<h3 id="teamheading">LOGISTICS TEAM</h3>
 			<div class="album-item">
 				<img src="" alt="Participant 9 Photo Placeholder">
 				<h3>DANIEL GEORGE</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 10 Photo Placeholder">
 				<h3>ASMI AGARWAL</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 11 Photo Placeholder">
 				<h3>ADWITA PRAVISH</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 12 Photo Placeholder">
 				<h3>ANANYA SINHA</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<h3 id="teamheading">HOSPITALITY TEAM</h3>
 			<div class="album-item">
 				<img src="" alt="Participant 13 Photo Placeholder">
 				<h3>YASHODHARA</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 14 Photo Placeholder">
 				<h3>HASINI KURIKALA</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 15 Photo Placeholder">
 				<h3>ANSHU PARCHURI</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 16 Photo Placeholder">
 				<h3>BH VSM ANUGNA</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 16 Photo Placeholder">
 				<h3>ANUJA CHOUDARY</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<h3 id="teamheading">SPONSORSHIP & MARKETING TEAM</h3>
 			<div class="album-item">
 				<img src="" alt="Participant 17 Photo Placeholder">
 				<h3>ANIRUDH PRATAP SINGH YADAV</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 18 Photo Placeholder">
 				<h3>SUJAY INDUPURU</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 19 Photo Placeholder">
 				<h3>EETASHA ROY</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 20 Photo Placeholder">
 				<h3>SHREYASHKA SENGAR</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 			<div class="album-item">
 				<img src="" alt="Participant 20 Photo Placeholder">
 				<h3>ADVIKA</h3>
 				<p class="album-item-placeholder"></p>
+				<a href="#" class="btn-star">
+					<span class="top_left"></span>
+					<span class="top_right"></span>
+					<span class="title">
+						Linkedin
+					</span>
+					<span class="bottom_left"></span>
+					<span class="bottom_right"></span>
+				</a>
 			</div>
 		</div>
 
