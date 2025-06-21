@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<meta content="tedxvce, tedx, tedx talks, hyderabad, talks, speakers" name="keywords">
+	<meta content="tedxsiuh, tedx, tedx talks, hyderabad, talks, speakers" name="keywords">
 	<meta content="TEDx is an international community that organizes TED-style events anywhere and everywhere"
 		name="description">
 	<link
@@ -27,11 +27,30 @@
 
 	<title>THE POWEHOUSE</title>
 	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+
 		body {
+			display: none;
 			margin: 0;
 			font-family: Arial, sans-serif;
 			background-color: #000000;
 			color: #fff;
+			opacity: 0;
+			animation: fadeInBody 2s ease-in-out forwards;
+		}
+
+		@keyframes fadeInBody {
+			from {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
 		}
 
 		#header {
@@ -101,6 +120,17 @@
 			padding: 1rem 1.1rem;
 			text-align: center;
 			transition: transform 0.3s, box-shadow 0.7s;
+			opacity: 0;
+			transform: translateY(30px);
+			animation: fadeInUp 0.8s ease-in-out forwards;
+			animation-delay: var(--delay, 0s);
+		}
+
+		@keyframes fadeInUp {
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
 		}
 
 		.album-item:hover {
@@ -198,78 +228,7 @@
 		}
 
 
-		/*
-		.card-text {
-			color: black;
-		}
 
-		.card-img-top {
-			height: 400px;
-			font-weight: 500px;
-		}
-
-		.card:hover {
-			transform: scale(1.01);
-		}
-
-		.card-title {
-			text-transform: uppercase;
-			font-weight: bold;
-			color: red;
-		}
-
-		.card-text {
-			font-weight: 600;
-			text-transform: capitalize;
-		}
-
-		.social a .tw {
-			background-color: #0084b4;
-		}
-
-		.social a .fb {
-			background-color: #3b5998;
-		}
-
-		.social a .ig {
-			background-color: #cd486b;
-		}
-
-		.social a .tw:hover {
-			transform: scale(1.15);
-		}
-
-		.social a .fb:hover {
-			transform: scale(1.15);
-		}
-
-		.social a .ig:hover {
-			transform: scale(1.15);
-		}
-
-		.social div {
-			width: 40px;
-			height: 40px;
-			background: green;
-			margin: 0 5px;
-			border-radius: 50%;
-			cursor: pointer;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			color: #fff;
-		}
-
-		.social {
-			width: 50%;
-			height: 50px;
-			position: absolute;
-			z-index: 15;
-			bottom: 0%;
-			display: flex;
-			justify-content: flex-end;
-		}*/
 
 		.navbar {
 			position: fixed;
@@ -508,62 +467,6 @@
 		</div>
 	</header>
 
-	<!-- <header id="header">
-		<div class="container">
-
-			<div id="logo" class="pull-left">
-				<h1 style="float: left"><a href="index.html"><img src="img/tedxsiuhyd.jpg" height="90px"
-							width="200px"></a></h1>
-			</div>
-
-			<nav style="float: right;" id="nav-menu-container">
-				<ul class="nav-menu">
-					<li class="menu-active"><a href="index.html#body">HOME</a></li>
-					<li><a href="index.html#about">ABOUT</a></li>
-					<li><a href="index.html#portfolio">MEDIA</a></li>
-					<li><a href="index.html#clients">PARTNERS</a></li>
-
-					<li><a href="index.html#contact">VENUE</a></li>
-
-					<li>
-						<form action=team.html>
-							<input type="submit" value="TEAM"
-								style="background-color:#000000;color:white;font-weight:bold;width:100px;height:36px;padding-top:3px;border-radius: 6px;">
-						</form> 
-						<a href="team.html"> TEAM </a>
-					</li>
-					<li>
-						 <form action=speakers.html>
-							<input type="submit" value="SPEAKERS"
-								style="background-color:#000000;color:white;font-weight:bold;height:36px;padding-top:3px;border-radius: 6px;padding-right:12px;padding-left:12px">
-						</form> 
-						<a href="speakers.html"> SPEAKERS </a>
-					</li>
-					<li>
-						 <form action="#">
-							<input type="submit" value="TICKETS"
-								style="background-color:#000000;color:white;font-weight:bold;width:100px;height:36px;padding-top:3px;padding-left:3px;padding-right:3px;border-radius: 6px;">
-						</form> 
-						<a href="#"> TICKETS </a>
-					</li>
-					<li>
-                        <form action="#">
-                            <input type="submit" value="TICKETS" style="background-color:#E62B1E;color:white;border-color:#E62B1E;font-weight:bold;height:36px;padding-top:3px;border-radius: 6px;"></form>
-                    </li>
-					<li style="color:grey; padding-top:10px">|</li>
-					<li class="social-links">
-					<li>
-						<a href="" class="instagram"><i class="fa fa-instagram"></i></a>
-					</li>
-					<li>
-						<a href="" class="linkedln"><i class="fa fa-linkedin"></i></a>
-					</li>
-					</li>
-				</ul>
-			</nav>
-			 #nav-menu-container 
-		</div>
-	</header> -->
 	<div class="main">
 		<div class="containerteam">
 			<header class="headerteam">TEDxSIUH TEAM</header>
@@ -975,6 +878,9 @@
 			Copyright Statement
 		</div>
 	</div>
+	<script>
+		document.body.style.display = "block";
+	</script>
 
 
 	<!-- Optional JavaScript -->
