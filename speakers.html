@@ -26,6 +26,7 @@
 	<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="speaker.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 
 	<title>Speakers</title>
@@ -74,7 +75,7 @@
 
 		#logo img {
 			height: 70px;
-			/* Reduce logo height */
+			/* Reduce logo height  */
 			width: 200px;
 			/* Keep aspect ratio */
 			margin: 0;
@@ -86,14 +87,15 @@
 			font-family: Arial, Helvetica, sans-serif;
 		}
 
+		/* 
 		.card-img-top {
 			height: 400px;
 			font-weight: 500px;
-		}
+		} */
 
 		.card {
 			background-color: #000000;
-			border: 2px solid #EB0028;
+			/* border: 2px solid #EB0028; */
 			border-radius: 8px;
 			padding: 1rem;
 			transition: transform 0.7s, box-shadow 0.6s;
@@ -216,6 +218,7 @@
 </head>
 
 <body>
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -271,105 +274,471 @@
 
 
 	<div class="main">
-		<div class="container py-3">
-			<div class="title h1 text-center" style="color:white;font-family: verdana;font-weight:bold;">SPEAKERS</div>
-			<!-- Card Start -->
+		<div class="container my-5">
+			<!-- Speaker Card -->
+			<div class="card speaker-card p-4 mb-5 d-flex flex-lg-row flex-column align-items-center gap-4">
+				<!-- Info Block -->
+				<div class="speaker-info flex-grow-1 text-center text-lg-start">
+					<h3 class="text-white fw-semibold mb-1">Dr.Ramakrishnan Raman</h3>
+					<p class="text-muted mb-3">Vice Chancellor | Symbiosis International ( Deemed University )</p>
+					<p class="text-light text-justify">
+						Dr. Ramakrishnan Raman is an academic leader with over two decades of experience spanning
+						academia, research, and industry. With a Ph.D. in Management, an MBA, and a background in
+						Computer Science, he has held key roles at Symbiosis, including Director of SCIT and SIBM Pune,
+						and Dean of the Faculty of Management.
+						As Vice Chancellor, he drives academic excellence and global collaboration, with research
+						interests in IT Strategy, AI, Big Data, and Entrepreneurship.
+
+					</p>
+					<a href="#" class="btn-star">
+						<span class="top_left"></span>
+						<span class="top_right"></span>
+						<span class="title">
+							Linkedin
+						</span>
+						<span class="bottom_left"></span>
+						<span class="bottom_right"></span>
+					</a>
+
+				</div>
+
+				<!-- Image Block -->
+				<div class="speaker-img"><img src="img/simgs/ramakrishnan.png" alt="Dr.Ramakrishnan Raman">
+				</div>
+			</div>
+			<!-- Speaker Card -->
+			<div class="card speaker-card p-4 mb-5 d-flex flex-lg-row flex-column align-items-center gap-4">
+				<!-- Info Block -->
+				<div class="speaker-info flex-grow-1 text-center text-lg-start">
+					<h3 class="text-white fw-semibold mb-1">Dr. Vidya Yeravdekar</h3>
+					<p class="text-muted mb-3">Pro Chancellor | Symbiosis International ( Deemed University ) </p>
+					<p class="text-light text-justify">
+						Dr. Vidya Yeravdekar is the Pro Chancellor of Symbiosis International (Deemed University), a
+						premier multi-disciplinary university with over 45,000 students from across India and 85
+						countries. She holds postgraduate degrees in Medicine and Law, along with a Ph.D. in the
+						Internationalisation of Higher Education in India.
+						A key contributor to India's National Education Policy 2020, Dr. Yeravdekar has served two terms
+						on the University Grants Commission (UGC) and held roles in national bodies like CABE, ICCR,
+						SEPC, and IBEF. As Chairperson of FICCI's Higher Education Committee, she continues to shape
+						education policy and promote 'Brand India' globally.She also serves on the boards of several
+						academic, industry, and nonprofit organisations, and remains committed to driving innovation and
+						global engagement at Symbiosis.
 
 
+					</p>
+					<a href="#" class="btn-star">
+						<span class="top_left"></span>
+						<span class="top_right"></span>
+						<span class="title">
+							Linkedin
+						</span>
+						<span class="bottom_left"></span>
+						<span class="bottom_right"></span>
+					</a>
 
-			<div class="card" style="--delay:0.2s;">
-				<div class="row ">
-					<div class="col-md-7 px-3">
-						<div class="card-block px-6">
-							<center>
-								<h4 class="card-title"><b>Name</b> </h4>
-							</center>
-							<p class="subt">Designation,Position</p>
-							<p class="card-text">
-								<!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt et pariatur quasi
-								dolorem, laboriosam vero odit quaerat repellendus. Rem doloribus consequatur labore
-								autem molestiae quam quos necessitatibus corporis, dolore quidem? -->
+				</div>
 
-							</p>
+				<!-- Image Block -->
+				<div class="speaker-img"><img src="img/simgs/vidya.png" alt="Dr.Vidya Yeravdekar">
+				</div>
+			</div>
+			<!-- Speaker Card -->
+			<div class="card speaker-card p-4 mb-5 d-flex flex-lg-row flex-column align-items-center gap-4">
+				<!-- Info Block -->
+				<div class="speaker-info flex-grow-1 text-center text-lg-start">
+					<h3 class="text-white fw-semibold mb-1">Sandeep Chatterjee</h3>
+					<p class="text-muted mb-3">Growth Leader – Digital Business Solutions | Supply Chain &
+						Sustainability | IBM Consulting
+					</p>
+					<p class="text-light text-justify">
+						Sandeep is a global expert in digital supply chain and sustainability, currently leading
+						initiatives at IBM Consulting. With prior roles at Deloitte, KPMG, Infosys, and Tata Motors, he
+						brings cross-industry experience in supply chain strategy, ERP, and business transformation.
+						An IIM Kozhikode MBA and accomplished author, he serves on boards including IIM Kozhikode and
+						ISCEA, and has received numerous global leadership awards. Sandeep is also a marathoner and a
+						passionate mentor.
 
+					</p>
+					<a href="#" class="btn-star">
+						<span class="top_left"></span>
+						<span class="top_right"></span>
+						<span class="title">
+							Linkedin
+						</span>
+						<span class="bottom_left"></span>
+						<span class="bottom_right"></span>
+					</a>
 
-						</div>
-					</div>
-					<div class="col-md-5">
-						<img class="d-block" src="img/placeholder" alt="">
-					</div>
+				</div>
+
+				<!-- Image Block -->
+				<div class="speaker-img"><img src="img/simgs/sandeep.png" alt="Sandeep Chatterjee">
+				</div>
+			</div>
+			<!-- Speaker Card -->
+			<div class="card speaker-card p-4 mb-5 d-flex flex-lg-row flex-column align-items-center gap-4">
+				<!-- Info Block -->
+				<div class="speaker-info flex-grow-1 text-center text-lg-start">
+					<h3 class="text-white fw-semibold mb-1">Harsha Durugadda</h3>
+					<p class="text-muted mb-3">Multi-disciplinary Artist | Sculptor</p>
+					<p class="text-light text-justify">
+						Harsha Durugadda is an Indian sculptor who received The Arts Family Emerging Artist Award in
+						2023 for South Asia and won the Rio Tinto Sculpture Award 2017 at Sculpture by the Sea,
+						Australia. In 2021 he was part of a Sotheby’s New York contemporary auction in partnership with
+						Burning Man. In 2014, the Courtauld Institute of Art invited him to present on Ancient Buddhist
+						Sculpture at the British Museum, London. He received the Andrew Stretton Memorial invitation in
+						2016 Sydney. His sculptures have been exhibited internationally at Nord Art in Germany, Emergent
+						Art Space in the United States, London, and Sculpture by the Sea in Australia. Durugadda’s
+						artworks are part of major public and private collections including Busselton Jetty (Australia),
+						Bangalore Airport and RMZ Foundation.
+					</p>
+					<a href="#" class="btn-star">
+						<span class="top_left"></span>
+						<span class="top_right"></span>
+						<span class="title">
+							Linkedin
+						</span>
+						<span class="bottom_left"></span>
+						<span class="bottom_right"></span>
+					</a>
+
+				</div>
+
+				<!-- Image Block -->
+				<div class="speaker-img"><img src="img/simgs/harsha-d.jpg" alt="Harsha Durugadda">
+				</div>
+			</div>
+			<!-- Speaker Card -->
+			<div class="card speaker-card p-4 mb-5 d-flex flex-lg-row flex-column align-items-center gap-4">
+				<!-- Info Block -->
+				<div class="speaker-info flex-grow-1 text-center text-lg-start">
+					<h3 class="text-white fw-semibold mb-1">Saurabh Sharma</h3>
+					<p class="text-muted mb-3">Managing Director | JSSB LEGAL (OPC) Pvt. Ltd</p>
+					<p class="text-light text-justify">
+						Harsha Durugadda is an Indian sculptor who received The Arts Family Emerging Artist Award in
+						2023 for South Asia and won the Rio Tinto Sculpture Award 2017 at Sculpture by the Sea,
+						Australia. In 2021 he was part of a Sotheby’s New York contemporary auction in partnership with
+						Burning Man. In 2014, the Courtauld Institute of Art invited him to present on Ancient Buddhist
+						Sculpture at the British Museum, London. He received the Andrew Stretton Memorial invitation in
+						2016 Sydney. His sculptures have been exhibited internationally at Nord Art in Germany, Emergent
+						Art Space in the United States, London, and Sculpture by the Sea in Australia. Durugadda’s
+						artworks are part of major public and private collections including Busselton Jetty (Australia),
+						Bangalore Airport and RMZ Foundation.
+					</p>
+					<a href="#" class="btn-star">
+						<span class="top_left"></span>
+						<span class="top_right"></span>
+						<span class="title">
+							Linkedin
+						</span>
+						<span class="bottom_left"></span>
+						<span class="bottom_right"></span>
+					</a>
+
+				</div>
+
+				<!-- Image Block -->
+				<div class="speaker-img"><img src="img/simgs/Saurabh.png" alt="Saurabh Sharma">
+				</div>
+			</div>
+			<div class="card speaker-card p-4 mb-5 d-flex flex-lg-row flex-column align-items-center gap-4">
+				<!-- Info Block -->
+				<div class="speaker-info flex-grow-1 text-center text-lg-start">
+					<h3 class="text-white fw-semibold mb-1">Emmanuel Gosula</h3>
+					<p class="text-muted mb-3">Strategic HR Leader, Talent Transformation Expert</p>
+					<p class="text-light text-justify">
+						With over 19 years of HR leadership across India, APAC, Australia, and the USA, Emmanuel Gosula
+						is a trusted HR strategist known for driving people transformation and digital HR solutions. He
+						has led large teams, managed multimillion-dollar projects, and played a key role in scaling EPAM
+						India from 90 to ~9000 employees, achieving major cost efficiencies and workforce impact.
+						An MBA in HR & Systems with certifications in AI and HR analytics, Emmanuel is a former NHRDN
+						board member, Hysea HR forum member, XLRI alumnus, and guest faculty across institutions. His
+						expertise spans HRBP, talent development, and capability centre creation, underpinned by a
+						passion for innovation and strategic growth.
+					</p>
+					<a href="#" class="btn-star">
+						<span class="top_left"></span>
+						<span class="top_right"></span>
+						<span class="title">
+							Linkedin
+						</span>
+						<span class="bottom_left"></span>
+						<span class="bottom_right"></span>
+					</a>
+
+				</div>
+
+				<!-- Image Block -->
+				<div class="speaker-img"><img src="img/simgs/Emmanual.png" alt="Emmanuel Gosula">
 				</div>
 			</div>
 		</div>
 
-		<br>
-		<br>
-
-	</div>
-	<footer>
-		<div class="wow fadeInUp">
-			<div class="footer">
-				<div class="footer-left">
-					<img src="img/tedxsiuhyd.jpg" alt="TEDxSIUH Logo">
-				</div>
-				<div class="footer-left">
-					<p class="copyright">@Copyright 2025 - TEDxSIU Hyderabad</p>
-				</div>
-				<div class="footer-right">
-					<a href="#"><i class="fa fa-instagram"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-				</div>
-
-			</div>
-		</div>
-		</div>
 		<style>
 			body {
-				margin: 0;
+				background-color: #0f0f0f;
+				font-family: 'Poppins', sans-serif;
+			}
+
+			.speaker-card {
+				background: rgba(255, 255, 255, 0.05);
+				backdrop-filter: blur(12px);
+				border: 1px solid rgba(255, 255, 255, 0.08);
+				border-radius: 20px;
+				transition: all 0.3s ease-in-out;
+			}
+
+			.speaker-card:hover {
+				transform: translateY(-6px);
+				box-shadow: 0 12px 30px rgba(230, 43, 30, 0.315);
+			}
+
+			.speaker-img {
+				width: 240px;
+				height: 240px;
+				border: 3px solid #ff110059;
+				border-radius: 16px;
+				overflow: hidden;
+				display: block;
+				flex-shrink: 0;
+				margin-left: 2rem;
 				padding: 0;
+				box-sizing: border-box;
+				position: relative;
+				/* Optional: helps eliminate margin collapse bugs */
 			}
 
-			.footer {
-				max-width: 1400px;
-				margin: 0 auto;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding: 20px 40px;
-				background-color: black;
-				color: white;
-			}
-
-			.footer-left img {
-				height: 90px;
-				width: auto;
-			}
-
-			.footer-right a {
-				color: white;
-				background-color: #000000;
-				margin-left: 10px;
-				padding: 8px;
-				border-radius: 6px;
-				display: inline-block;
-				text-align: center;
-				transition: background-color 0.3s ease;
-			}
-
-			.footer-right a:hover {
-				background-color: rgba(220, 39, 39, 0.9);
-			}
-
-			.copyright {
-				font-size: 20px;
-				margin-top: 6px;
-				color: #999;
+			.speaker-img img {
+				width: 120%;
+				height: 100%;
 			}
 		</style>
-		</div>
-	</footer>
-	<script>document.body.style.display = "block";</script>
 
+		<br>
+		<br>
+		<footer>
+			<div class="wow fadeInUp">
+				<div class="footer">
+					<div class="footer-left">
+						<img src="img/tedxsiuhyd.jpg" alt="TEDxSIUH Logo">
+					</div>
+					<div class="footer-left">
+						<p class="copyright">@Copyright 2025 - TEDxSIU Hyderabad</p>
+					</div>
+					<div class="footer-right">
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.footer {
+			max-width: 1400px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px 40px;
+			background-color: black;
+			color: white;
+		}
+
+		.footer-left img {
+			height: 90px;
+			width: auto;
+		}
+
+		.footer-right a {
+			color: white;
+			background-color: #000000;
+			margin-left: 10px;
+			padding: 8px;
+			border-radius: 6px;
+			display: inline-block;
+			text-align: center;
+			transition: background-color 0.3s ease;
+		}
+
+		.footer-right a:hover {
+			background-color: rgba(220, 39, 39, 0.9);
+		}
+
+		.copyright {
+			font-size: 20px;
+			margin-top: 6px;
+			color: #999;
+		}
+	</style>
+	</div>
+	<script>document.body.style.display = "block";</script>
+	<style>
+		/* THIS IS THE LINKED IN BUTTON STYLE */
+		@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:100,400');
+
+		/* Hover Effect Animations */
+		@keyframes StarBackground {
+			10% {
+				background-color: rgba(255, 255, 255, 0.1);
+				filter: blur(1px);
+			}
+
+			20% {
+				background-color: rgba(255, 255, 255, 0);
+			}
+
+			40% {
+				background-color: rgba(255, 255, 255, 0.05);
+			}
+
+			50% {
+				background-color: rgba(255, 255, 255, 0);
+			}
+
+			60% {
+				background-color: rgba(255, 255, 255, 0.3);
+			}
+
+			70% {
+				background-color: rgba(255, 255, 255, 0);
+				filter: blur(2px);
+			}
+
+			80% {
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+
+			90% {
+				background-color: rgba(255, 255, 255, 0.1);
+			}
+
+			100% {
+				background-color: rgba(255, 255, 255, 0.09);
+			}
+		}
+
+		@keyframes StarBorderColor {
+			10% {
+				border-color: rgba(255, 255, 255, 0.1);
+			}
+
+			20% {
+				border-color: rgba(255, 255, 255, 0.05);
+			}
+
+			40% {
+				border-color: rgba(255, 255, 255, 0);
+			}
+
+			50% {
+				border-color: rgba(255, 255, 255, 0.3);
+			}
+
+			60% {
+				border-color: rgba(255, 255, 255, 0);
+			}
+
+			70% {
+				border-color: rgba(255, 255, 255, 0.2);
+			}
+
+			80% {
+				border-color: rgba(255, 255, 255, 0.7);
+			}
+
+			90% {
+				border-color: rgba(255, 255, 255, 0);
+			}
+
+			100% {
+				border-color: rgba(255, 255, 255, 0.4);
+			}
+		}
+
+		/* Button Styling */
+		.btn-star {
+			position: relative;
+			background-color: rgba(255, 255, 255, 0.03);
+			padding: 10px 30px;
+			display: block;
+			max-width: 140px;
+			margin: 0 auto;
+			color: rgba(255, 255, 255, 0.6);
+			font-weight: 100;
+			transition: color 0.5s ease, background-color 0.1s ease;
+		}
+
+		.btn-star .top_left,
+		.btn-star .top_right,
+		.btn-star .bottom_left,
+		.btn-star .bottom_right {
+			width: 10px;
+			height: 10px;
+			position: absolute;
+		}
+
+		.btn-star .bottom_right,
+		.btn-star .bottom_left {
+			bottom: 0;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		.btn-star .top_left,
+		.btn-star .top_right {
+			top: 0;
+			border-top: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		.btn-star .top_left,
+		.btn-star .bottom_left {
+			left: 0;
+			border-left: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		.btn-star .top_right,
+		.btn-star .bottom_right {
+			right: 0;
+			border-right: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		.btn-star::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			border: 1px solid transparent;
+			top: 0;
+			left: 0;
+			transition: border-color 0.2s ease;
+		}
+
+		.btn-star:hover {
+			animation: StarBackground 0.5s;
+			background-color: rgba(255, 255, 255, 0.09);
+			color: rgba(255, 255, 255, 1);
+		}
+
+		.btn-star:hover .top_left,
+		.btn-star:hover .top_right,
+		.btn-star:hover .bottom_left,
+		.btn-star:hover .bottom_right {
+			border: none;
+		}
+
+		.btn-star:hover::before {
+			border-color: rgba(255, 255, 255, 0.4);
+			animation: StarBorderColor 1s;
+		}
+	</style>
 </body>
 
 </html>
