@@ -18,7 +18,9 @@
 	<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 	<link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+	</style>
 	<style>
 		#header {
 			background-color: black;
@@ -57,7 +59,7 @@
 					<li><a href="#clients">PARTNERS</a></li>
 					<li><a href="#contact">VENUE</a></li>
 					<li>
-					<li><a href="team.html">TEAM</a></li>
+						<!-- <li><a href="#">TEAM</a></li> -->
 
 					</li>
 					<li>
@@ -83,15 +85,91 @@
 			</nav>
 		</div>
 	</header>
-	<div style="position:relative;border-radius:10px;">
-		<video autoplay loop muted class="video-loading" style="width: 100%; height:auto;">
-			<source src="img/TEDxSIU.mp4" type="video/mp4" alt="your browser does not support the video tag">
-		</video>
+	<div class="vid-container">
+		<div style="position:relative;border-radius:10px;">
+			<video autoplay loop muted class="video-loading background-video" style="width: 100%; height:auto;">
+				<source src="img/horizon.mp4" type="video/mp4" alt="your browser does not support the video tag">
+			</video>
+			<div class="content-overlay">
+				<!-- <h1 class="dm-serif-display-regular">Beyond Horizon</h1>
+				<p>Push past limits. Dominate your destiny.</p> -->
+				<a class="yt-link" href="https://youtu.be/cyWL7FdgzK4?si=BgvS-h4XrWbjT660"><b>View Video</b></a>
+			</div>
+		</div>
 		<!--<div
 			style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 24px;">
 
 		</div>-->
 	</div>
+	<style>
+		.dm-serif-display-regular {
+			font-family: "DM Serif Display", serif;
+			font-weight: 400;
+			font-style: normal;
+		}
+
+		.yt-link {
+			position: relative;
+			top: 1050px;
+			left: 900px;
+			border: 1px red solid;
+			padding: 15px;
+			border-radius: 30px;
+			color: white;
+		}
+
+		.yt-link:hover {
+			background-color: red;
+			color: black;
+		}
+
+		.video-container {
+			position: relative;
+			width: 100%;
+			height: 100vh;
+			/* Full screen height */
+			padding-top: 100px;
+			overflow: hidden;
+		}
+
+		.background-video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+
+		.content-overlay {
+			position: absolute;
+			left: 1035px;
+			top: 50%;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			font-family: 'Segoe UI', sans-serif;
+			padding: 20px;
+			background: rgba(0, 0, 0, 0.7);
+			/* Optional: slight dark bg for readability */
+			border-radius: 10px;
+		}
+
+		.content-overlay>h1 {
+			font-size: 150px;
+			position: relative;
+			top: 30%;
+			text-shadow: rgba(219, 37, 37, 0.74) 0px 0px 63px;
+		}
+
+
+		.content-overlay>p {
+			font-size: 40px;
+			position: relative;
+			top: 30%;
+		}
+	</style>
 
 	<!--==========================
 	About Section
@@ -402,7 +480,7 @@
 					</h4>
 					<br>
 				</a>
-				<a href="#" class="neon-button">MEET THE POWERHOUSE</a>
+				<a href="team.html" class="neon-button">MEET THE POWERHOUSE</a>
 				<style>
 					@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
 
